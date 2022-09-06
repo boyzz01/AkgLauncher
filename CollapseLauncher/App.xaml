@@ -1,0 +1,24 @@
+﻿<Application
+    x:Class="CollapseLauncher.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CollapseLauncher">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+                <ResourceDictionary Source="/XAMLs/ResourceDictionary.xaml"/>
+                <!-- Other merged dictionaries here -->
+            </ResourceDictionary.MergedDictionaries>
+            <FontFamily x:Key="vipnarg">ms-appx:///Assets/fonts/vipnagorgialla rg.otf#Vipnagorgialla</FontFamily>
+            <FontFamily x:Key="vipnabold">ms-appx:///Assets/fonts/vipnagorgialla bd.otf#Vipnagorgialla</FontFamily>
+            <FontFamily x:Key="vipnabolditalic">ms-appx:///Assets/fonts/vipnagorgialla bd it.otf#Vipnagorgialla</FontFamily>
+            <FontFamily x:Key="galac">/Assets/Fonts/galac.ttf#tes2</FontFamily>
+            <FontFamily x:Key="jhia">/Assets/Fonts/Jhiaxus.otf#tes3</FontFamily>
+            <FontFamily x:Key="FontAwesomeBrand">/Assets/Fonts/FontAwesomeBrand6.otf#Font Awesome 6 Brands</FontFamily>
+            <FontFamily x:Key="FontAwesome">/Assets/Fonts/FontAwesomeRegular6.otf#Font Awesome 6 Free</FontFamily>
+
+            <!-- Other app resources here -->
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

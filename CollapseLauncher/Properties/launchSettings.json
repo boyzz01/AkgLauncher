@@ -1,0 +1,42 @@
+{
+  "profiles": {
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "Updater": {
+      "commandName": "Project",
+      "commandLineArgs": "update --input \"C:\\Program Files\\Collapse Launcher\" --channel Preview",
+      "remoteDebugEnabled": false,
+      "nativeDebugging": true
+    },
+    "Elevate Updater": {
+      "commandName": "Project",
+      "commandLineArgs": "elevateupdate --input \"H:\\Data\\test\" --channel Preview",
+      "remoteDebugEnabled": false,
+      "nativeDebugging": true
+    },
+    "Reindexer": {
+      "commandName": "Project",
+      "commandLineArgs": "reindex --input \"\\myGit\\CollapseLauncher-ReleaseRepo\\preview\" --upver 1.0.33.6",
+      "remoteDebugEnabled": false,
+      "nativeDebugging": true
+    },
+    "Collapse Launcher": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false,
+      "nativeDebugging": false
+    },
+    "Take Ownership": {
+      "commandName": "Project",
+      "commandLineArgs": "takeownership --input \"H:\\Data\\Games\\miHoYoGames\"",
+      "remoteDebugEnabled": false,
+      "nativeDebugging": true
+    },
+    "Migrate": {
+      "commandName": "Project",
+      "commandLineArgs": "migrate --input \"C:\\Program Files\\Honkai Impact 3 sea\" --output \"H:\\Games\\miHoYoGames\\Hi3SEA\"",
+      "nativeDebugging": false
+    }
+  }
+}
