@@ -61,7 +61,7 @@ namespace CollapseLauncher.Pages
                 if (!AbortTransition)
                 {
                     SaveAppConfig();
-                    MainFrameChanger.ChangeWindowFrame(typeof(MainPage));
+                    MainFrameChanger.ChangeWindowFrame(typeof(LoginPage));
                 }
             }
         }
