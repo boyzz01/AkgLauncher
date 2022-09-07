@@ -22,7 +22,7 @@ namespace CollapseLauncher
             }
         }
 
-        private void PaimonClicked(object sender, PointerRoutedEventArgs e)
+        private void RefreshClicked(object sender, PointerRoutedEventArgs e)
         {
             MainFrameChanger.ChangeWindowFrame(typeof(MainPage), new DrillInNavigationTransitionInfo());
         }

@@ -42,7 +42,7 @@ namespace CollapseLauncher
                 BackgroundImgChangerInvoker.ImgEvent += CustomBackgroundChanger_Event;
                 SpawnWebView2Invoker.SpawnEvent += SpawnWebView2Invoker_SpawnEvent;
 
-                LauncherUpdateWatcher.StartCheckUpdate();
+             //   LauncherUpdateWatcher.StartCheckUpdate();
 
                 CheckRunningGameInstance();
 
@@ -93,9 +93,9 @@ namespace CollapseLauncher
 
         private void NotificationInvoker_EventInvoker(object sender, NotificationInvokerProp e)
         {
-            SpawnNotificationPush(e.Notification.Title, e.Notification.Message, e.Notification.Severity,
-                e.Notification.MsgId, e.Notification.IsClosable ?? true, e.Notification.IsDisposable ?? true, e.CloseAction,
-                e.OtherContent, e.IsAppNotif);
+            //SpawnNotificationPush(e.Notification.Title, e.Notification.Message, e.Notification.Severity,
+            //    e.Notification.MsgId, e.Notification.IsClosable ?? true, e.Notification.IsDisposable ?? true, e.CloseAction,
+            //    e.OtherContent, e.IsAppNotif);
         }
 
         private async void GetAppNotificationPush()
@@ -179,7 +179,7 @@ namespace CollapseLauncher
                     || (LauncherUpdateWatcher.CompareVersion(AppCurrentVersion, Entry.ValidForVerBelow)
                         && LauncherUpdateWatcher.CompareVersion(Entry.ValidForVerAbove, AppCurrentVersion))
                     || LauncherUpdateWatcher.CompareVersion(AppCurrentVersion, Entry.ValidForVerBelow))
-                    SpawnNotificationPush(Entry.Title, Entry.Message, Entry.Severity, Entry.MsgId, Entry.IsClosable ?? true, Entry.IsDisposable ?? true, ClickCloseAction, null, true);
+                //    SpawnNotificationPush(Entry.Title, Entry.Message, Entry.Severity, Entry.MsgId, Entry.IsClosable ?? true, Entry.IsDisposable ?? true, ClickCloseAction, null, true);
                 await Task.Delay(250);
             }
         }
@@ -200,15 +200,15 @@ namespace CollapseLauncher
                     string updateElevator = Path.Combine(AppFolder, "ApplyUpdate.exe");
 
                     string VerString = File.ReadAllLines(UpdateNotifFile)[0];
-                    SpawnNotificationPush(
-                        Lang._Misc.UpdateCompleteTitle,
-                        string.Format(Lang._Misc.UpdateCompleteSubtitle, VerString, IsPreview ? "Preview" : "Stable"),
-                        InfoBarSeverity.Success,
-                        0xAF,
-                        true,
-                        false,
-                        ClickClose
-                        );
+                    //SpawnNotificationPush(
+                    //    Lang._Misc.UpdateCompleteTitle,
+                    //    string.Format(Lang._Misc.UpdateCompleteSubtitle, VerString, IsPreview ? "Preview" : "Stable"),
+                    //    InfoBarSeverity.Success,
+                    //    0xAF,
+                    //    true,
+                    //    false,
+                    //    ClickClose
+                    //    );
 
                     string target;
                     string fold = Path.Combine(AppFolder, "_Temp");

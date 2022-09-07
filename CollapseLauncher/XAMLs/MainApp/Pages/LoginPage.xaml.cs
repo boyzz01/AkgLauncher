@@ -28,7 +28,7 @@ namespace CollapseLauncher.Pages
 
     public class User
     {
-        public string gameProvider { get; set; }
+        public string gameprovider { get; set; }
         public string email { get; set; }
         public string password { get; set; }
         public string otp { get; set; }
@@ -219,7 +219,7 @@ namespace CollapseLauncher.Pages
             //saveSetting("password", passwordLoginTxt.Password.ToString());
             //CheckLogin();
             var person = new User();
-            person.gameProvider = "blueprotocol";
+            person.gameprovider = "blueprotocol";
             person.email = emailLoginTxt.Text;
             person.password = passwordLoginTxt.Password.ToString();
 

@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplyUpdate", "ApplyUpdate\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hi3HelperCore.Http", "Hi3HelperCore.Http\Hi3HelperCore.Http.csproj", "{D8FF6154-B6FB-4876-A3ED-6DF0706156A0}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AkgLauncher", "AkgLauncher\AkgLauncher.vdproj", "{008D5241-9717-44CB-803A-E6F743E8C4B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|arm64 = Debug|arm64
@@ -74,6 +76,15 @@ Global
 		{D8FF6154-B6FB-4876-A3ED-6DF0706156A0}.Release|x64.ActiveCfg = Release|x64
 		{D8FF6154-B6FB-4876-A3ED-6DF0706156A0}.Release|x64.Build.0 = Release|x64
 		{D8FF6154-B6FB-4876-A3ED-6DF0706156A0}.Release|x86.ActiveCfg = Release|x64
+		{008D5241-9717-44CB-803A-E6F743E8C4B9}.Debug|arm64.ActiveCfg = Debug
+		{008D5241-9717-44CB-803A-E6F743E8C4B9}.Debug|x64.ActiveCfg = Debug
+		{008D5241-9717-44CB-803A-E6F743E8C4B9}.Debug|x86.ActiveCfg = Debug
+		{008D5241-9717-44CB-803A-E6F743E8C4B9}.Publish|arm64.ActiveCfg = Debug
+		{008D5241-9717-44CB-803A-E6F743E8C4B9}.Publish|x64.ActiveCfg = Debug
+		{008D5241-9717-44CB-803A-E6F743E8C4B9}.Publish|x86.ActiveCfg = Debug
+		{008D5241-9717-44CB-803A-E6F743E8C4B9}.Release|arm64.ActiveCfg = Release
+		{008D5241-9717-44CB-803A-E6F743E8C4B9}.Release|x64.ActiveCfg = Release
+		{008D5241-9717-44CB-803A-E6F743E8C4B9}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
