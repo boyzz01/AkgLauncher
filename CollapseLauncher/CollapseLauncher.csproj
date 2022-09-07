@@ -39,7 +39,6 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <None Remove="ApplyUpdate.exe.config" />
-	  <None Remove="Assets\BG\PaimonWhat.png" />
 	  <None Remove="XAMLs\MainApp\Pages\UpdatePage - Copy.xaml" />
 	  <None Remove="XAMLs\StartUp\StartupLanguageSelect.xaml" />
 	</ItemGroup>
@@ -51,7 +50,6 @@
         <Content Include="ApplyUpdate.exe.config">
           <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>
-        <Content Include="icon.ico" />
     </ItemGroup>
 
     <ItemGroup>
@@ -75,25 +73,10 @@
 	</Target>
 
     <ItemGroup>
-        <Content Update="Assets\BG\AiHappy.png">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </Content>
         <Content Update="Assets\BG\default.png">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>
-        <Content Update="Assets\BG\PaimonSleep.png">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </Content>
-        <Content Update="Assets\BG\PaimonWhat.png">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </Content>
-        <Content Update="Assets\CollapseLauncherLogo2.png">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </Content>
         <Content Update="Assets\Fonts\FontAwesomeBrand6.otf">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </Content>
-        <Content Update="Assets\CollapseLauncherLogo2.png">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>
     </ItemGroup>

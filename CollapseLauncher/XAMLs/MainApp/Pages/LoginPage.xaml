@@ -584,9 +584,9 @@
         <!--<Custom:AnimatedVisualPlayer x:Name="mediaPlayer"
                       AreTransportControlsEnabled="False"
                       Source="/Assets/BG/BP_Animation.mp4" PosterSource="/Assets/BG/BG.png" IsLooping="True" />-->
-        <!--<Grid.Background>
+        <Grid.Background>
             <ImageBrush ImageSource="/Assets/BG/BP_Animation.gif"/>
-        </Grid.Background>-->
+        </Grid.Background>
         <Grid >
             <Grid.Background>
                 <ImageBrush ImageSource="/Assets/BG/fill.png"/>
@@ -654,6 +654,9 @@
                         </TextBox.BorderBrush>
                     </TextBox>
                     <PasswordBox x:Name="passwordLoginTxt" PlaceholderText="Password" FontFamily="{StaticResource vipnarg}"  Margin="20,10,20,0" SelectionHighlightColor="Transparent" Foreground="Transparent" FocusVisualSecondaryBrush="Transparent" FocusVisualPrimaryBrush="Transparent" FontSize="14" Background="#00000000" BorderThickness="0,0,0,3" TabIndex="1"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                        <TextBlock  x:Name="errorTxt1" Visibility="Collapsed" TextWrapping="Wrap" Foreground="#FFD42727" FontSize="10" FontFamily="{StaticResource vipnarg}" VerticalAlignment="Center" Text="Error " SelectionHighlightColor="#FFBD3D3D"/>
+                    </StackPanel>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="20,20,20,0">
                         <CheckBox VerticalAlignment="Center" VerticalContentAlignment="Center" MinWidth="10" HorizontalAlignment="Stretch" FontSize="11" IsTabStop="False">
                             <TextBlock Text="Stay logged in" VerticalAlignment="Center" FontSize="10" Foreground="#FFA5A5A5" FontFamily="{StaticResource vipnarg}" Margin="0,0,0,6" LineHeight="7" />
@@ -662,7 +665,7 @@
 
                         <TextBlock x:Name="textBlock3" TextWrapping="Wrap" Text="Forgot Password?" Foreground="#FFFEFBEA" FontFamily="{StaticResource vipnabold}" TextDecorations="Underline" HorizontalAlignment="Stretch" VerticalAlignment="Center" FocusVisualPrimaryBrush="#FFFEFBEA" FocusVisualSecondaryBrush="#FFFEFBEA" FontSize="10" Margin="130,0,0,0"/>
                     </StackPanel>
-
+                    
                 </StackPanel>
                 <Button Click="LoginBtnClick" IsTabStop="False">
                     <Button.Template>
@@ -688,7 +691,7 @@
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,26.6,0,0" VerticalAlignment="Center"/>
                     <TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text="REGISTER" FontFamily="{StaticResource vipnabold}" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FFFEFBEA" FontSize="22" Margin="0,0,0,10" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
-                    <TextBox x:Name="textBox2" TextWrapping="Wrap" Text=""  Margin="20,10,20,0" FontSize="14" SelectionHighlightColor="#00111111" Foreground="Transparent" FocusVisualSecondaryBrush="Transparent" FocusVisualPrimaryBrush="Transparent" Background="#00111111" PlaceholderText="Email Address" PlaceholderForeground="#FFA5A5A5" FontWeight="Normal" InputScope="Password" BorderThickness="0,0,0,3" TabIndex="1" FontFamily="{StaticResource vipnarg}">
+                    <TextBox x:Name="emailRegister" TextWrapping="Wrap" Text=""  Margin="20,10,20,0" FontSize="14" SelectionHighlightColor="#00111111" Foreground="Transparent" FocusVisualSecondaryBrush="Transparent" FocusVisualPrimaryBrush="Transparent" Background="#00111111" PlaceholderText="Email Address" PlaceholderForeground="#FFA5A5A5" FontWeight="Normal" InputScope="Password" BorderThickness="0,0,0,3" TabIndex="1" FontFamily="{StaticResource vipnarg}">
                         <TextBox.BorderBrush>
                             <LinearGradientBrush EndPoint="0,2" MappingMode="Absolute">
                                 <LinearGradientBrush.RelativeTransform>
@@ -699,8 +702,13 @@
                             </LinearGradientBrush>
                         </TextBox.BorderBrush>
                     </TextBox>
-                    <PasswordBox x:Name="passwordBox2_Copy" PlaceholderText="Password" FontFamily="{StaticResource vipnarg}" SelectionHighlightColor="Transparent" Foreground="Transparent" FocusVisualSecondaryBrush="Transparent" FocusVisualPrimaryBrush="Transparent" FontSize="14" Background="#00000000" BorderThickness="0,0,0,3" TabIndex="1" Margin="20,10,20,0"/>
-                    <PasswordBox x:Name="passwordBox2" PlaceholderText="Confirm Password" FontFamily="{StaticResource vipnarg}"  Margin="20,10,20,0" SelectionHighlightColor="Transparent" Foreground="Transparent" FocusVisualSecondaryBrush="Transparent" FocusVisualPrimaryBrush="Transparent" FontSize="14" Background="#00000000" BorderThickness="0,0,0,3" TabIndex="1"/>
+                    <PasswordBox x:Name="passwordBoxRegister" PlaceholderText="Password" FontFamily="{StaticResource vipnarg}" SelectionHighlightColor="Transparent" Foreground="Transparent" FocusVisualSecondaryBrush="Transparent" FocusVisualPrimaryBrush="Transparent" FontSize="14" Background="#00000000" BorderThickness="0,0,0,3" TabIndex="1" Margin="20,10,20,0"/>
+                    <PasswordBox x:Name="passwordBox2Register" PlaceholderText="Confirm Password" FontFamily="{StaticResource vipnarg}"  Margin="20,10,20,0" SelectionHighlightColor="Transparent" Foreground="Transparent" FocusVisualSecondaryBrush="Transparent" FocusVisualPrimaryBrush="Transparent" FontSize="14" Background="#00000000" BorderThickness="0,0,0,3" TabIndex="1"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                        <TextBlock  x:Name="errorTxt2" Visibility="Collapsed" TextWrapping="Wrap" Foreground="#FFD42727" FontSize="10" FontFamily="{StaticResource vipnarg}" VerticalAlignment="Center" Text="Error " SelectionHighlightColor="#FFBD3D3D"/>
+                        <InfoBar x:Name ="test" Severity="Success" Title="Task completed successfully!" Message="optional, if you want to show additional secondary information"/>
+
+                    </StackPanel>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="20,20,20,0">
                         <CheckBox VerticalAlignment="Center" VerticalContentAlignment="Center" MinWidth="10" HorizontalAlignment="Stretch" FontSize="11">
                             <StackPanel Orientation="Horizontal">
@@ -722,9 +730,65 @@
                             </Button.Template>
                         </Button>
                     </StackPanel>
+                
+                </StackPanel>
+                <Button Click="ContinueBtnClick" IsTabStop="False">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Image x:Name="image23" Height="100" Source="/Assets/BG/CONTINUE.png" Width="427"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+             
+            </StackPanel>
+
+
+        </StackPanel>
+
+        <StackPanel x:Name="otp" Orientation="Vertical" VerticalAlignment="Center" Visibility="Collapsed">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,104,0">
+                <StackPanel.Background>
+                    <ImageBrush/>
+                </StackPanel.Background>
+                <Image  d:LayoutOverrides="TopPosition, BottomPosition" Source="/Assets/bg/bplogo.png" Width="299.64"/>
+                <StackPanel Orientation="Vertical" Width="427" Margin="0,38,0,0" Height="278.52" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="/Assets/BG/Base2.png"/>
+                    </StackPanel.Background>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,26.6,0,0" VerticalAlignment="Center"/>
+                    <TextBlock TextWrapping="Wrap" Text="OTP VERIFICATION" FontFamily="{StaticResource vipnabold}" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FFFEFBEA" FontSize="22" Margin="0,0,0,20" FontWeight="Bold"/>
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <TextBlock TextWrapping="Wrap" Foreground="#FFFDFDFD" FontSize="10" FontFamily="{StaticResource vipnarg}" VerticalAlignment="Center" Text="Enter the 6-digit OTP that has been sent to"></TextBlock>
+                        <TextBlock x:Name="emailOtp"  TextWrapping="Wrap" Foreground="White" FontSize="10" FontFamily="{StaticResource vipnarg}" VerticalAlignment="Center" Text="" FocusVisualPrimaryBrush="#E4FFFFFF"></TextBlock>
+
+
+                    </StackPanel>
+                    <TextBox Style="{StaticResource TextBoxStyle1}" x:Name="otpTxt" TextWrapping="Wrap" Text=""  Margin="20,20,20,0" FontSize="14" SelectionHighlightColor="#00111111" Foreground="Transparent" FocusVisualSecondaryBrush="Transparent" FocusVisualPrimaryBrush="Transparent" Background="#00111111" PlaceholderText="6 Digit OTP" PlaceholderForeground="#FFA5A5A5" FontWeight="Normal" InputScope="Password" BorderThickness="0,0,0,3" TabIndex="1" FontFamily="{StaticResource vipnarg}" HorizontalAlignment="Center">
+                        <TextBox.BorderBrush>
+                            <LinearGradientBrush EndPoint="0,2" MappingMode="Absolute">
+                                <LinearGradientBrush.RelativeTransform>
+                                    <ScaleTransform CenterY="0.5" ScaleY="-1"/>
+                                </LinearGradientBrush.RelativeTransform>
+                                <GradientStop Color="#72000000" Offset="0.5"/>
+                                <GradientStop Color="#FFA5A5A5" Offset="1"/>
+                            </LinearGradientBrush>
+                        </TextBox.BorderBrush>
+                    </TextBox>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0" >
+                        <TextBlock  x:Name="errorTxt3"  TextWrapping="Wrap" Visibility="Collapsed" Foreground="#FFD42727" FontSize="10" FontFamily="{StaticResource vipnarg}" VerticalAlignment="Center" Text="Error " SelectionHighlightColor="#FFBD3D3D"/>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="20,20,20,0"/>
+
 
                 </StackPanel>
-                <Image x:Name="image23" Height="100" Source="/Assets/BG/CONTINUE.png" Width="427"/>
+                <Button Click="SubmitBtnClick" IsTabStop="False">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Image x:Name="submit" Height="100" Source="/Assets/BG/SUBMIT.png" Width="427" />
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
             </StackPanel>
 
 
